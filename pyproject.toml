@@ -1,0 +1,32 @@
+[project]
+name = "harvard-systems-blog"
+version = "1.0.0"
+description = "A minimalist blog for systems research articles"
+requires-python = ">=3.8"
+dependencies = [
+    "markdown>=3.4",
+    "tomli>=2.0.0; python_version<'3.11'",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "ruff",
+]
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 100
+target-version = ['py38', 'py39', 'py310', 'py311']
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I"]
+ignore = []
+

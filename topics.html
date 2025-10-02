@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics - Harvard Systems Research Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo"><a href="index.html">Harvard Systems Research Blog</a></div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="articles.html">Articles</a>
+                <a href="topics.html">Topics</a>
+                <a href="index.html#about">About</a>
+            </div>
+        </div>
+    </nav>
+    <header class="hero">
+        <div class="container">
+            <h1 class="hero-title">Browse by Topic</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="tags-section">
+            <div class="tags-container">
+                <button class="tag-filter active" data-tag="all">All Articles (1)</button>
+                <button class="tag-filter" data-tag="caching">caching (1)</button>
+                <button class="tag-filter" data-tag="memory-management">memory-management (1)</button>
+                <button class="tag-filter" data-tag="performance">performance (1)</button>
+                <button class="tag-filter" data-tag="systems">systems (1)</button>
+            </div>
+        </section>
+
+        <section id="articles" class="articles-section">
+            <h2>Articles</h2>
+            <div class="articles-grid">
+                <a href="articles/example/segcache.html" class="article-card-link">
+                    <article class="article-card" data-tags="caching systems performance memory-management">
+                        <h3>Pelikan Segcache</h3>
+                        <p class="article-date">October 1, 2021</p>
+                        <p class="article-excerpt">
+                            In collaboration with Carnegie Mellon University, Twitter is building Pelikan's next generation of storage backend, which enables high memory efficiency, high throughput, and scalability for worklo...
+                        </p>
+                        <div class="card-tags"><span class="card-tag">caching</span> <span class="card-tag">systems</span> <span class="card-tag">performance</span></div>
+                        <span class="read-more">Read more →</span>
+                    </article>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Harvard John A. Paulson School of Engineering and Applied Sciences © 2025 · Terms of Service · Privacy Notice</p>
+        </div>
+    </footer>
+    <script>
+        // Tag filtering functionality
+        const tagFilters = document.querySelectorAll('.tag-filter');
+        const articleCards = document.querySelectorAll('.article-card');
+        
+        tagFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                // Update active state
+                tagFilters.forEach(f => f.classList.remove('active'));
+                filter.classList.add('active');
+                
+                const selectedTag = filter.dataset.tag;
+                
+                // Filter articles
+                articleCards.forEach(card => {
+                    const cardTags = card.dataset.tags || '';
+                    if (selectedTag === 'all' || cardTags.includes(selectedTag)) {
+                        card.style.display = '';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
