@@ -25,12 +25,33 @@ harvardSys_blog/
     └── build_index.py     # Page generator (index, articles, topics)
 ```
 
-## Design Features
 
-- **Clean Typography**: Uses Inter font family for a modern, readable design
-- **Responsive Layout**: Works seamlessly on desktop, tablet, and mobile devices
-- **Consistent Styling**: All pages share the same design language
-- **Minimal & Professional**: Focus on content with elegant simplicity
+
+## Installation
+
+### Install Dependencies
+
+This project uses `pyproject.toml` to manage dependencies. Install them using:
+
+```bash
+# Using pip
+pip install -e .
+
+# Or install just the runtime dependencies
+pip install markdown tomli
+```
+
+
+
+## Contributing
+
+When adding new articles:
+1. Follow the existing markdown structure
+2. Test the converted HTML in a browser
+3. Ensure images are properly linked
+4. Verify responsive design on mobile devices
+5. Check that all navigation links work correctly
+
 
 ## Adding New Articles
 
@@ -109,27 +130,3 @@ The index builder will:
 - Add interactive tag-based filtering on the topics page 
 
 
-## Installation
-
-### Install Dependencies
-
-This project uses `pyproject.toml` to manage dependencies. Install them using:
-
-```bash
-# Using pip
-pip install -e .
-
-# Or install just the runtime dependencies
-pip install markdown tomli
-```
-
-
-
-## Contributing
-
-When adding new articles:
-1. Follow the existing markdown structure
-2. Test the converted HTML in a browser
-3. Ensure images are properly linked
-4. Verify responsive design on mobile devices
-5. Check that all navigation links work correctly
