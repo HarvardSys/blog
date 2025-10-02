@@ -109,7 +109,6 @@ The index builder will:
 - Add interactive tag-based filtering on the topics page 
 
 
-
 ## Installation
 
 ### Install Dependencies
