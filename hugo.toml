@@ -1,7 +1,7 @@
 baseURL = "https://madsys.seas.harvard.edu/"
 title = "Harvard Systems Research Blog"
 author = "Harvard John A. Paulson School of Engineering and Applied Sciences"
-copyright = "© 2025"
+copyright = "© 2026"
 theme = "paper"
 languageCode = "en"
 DefaultContentLanguage = "en"
