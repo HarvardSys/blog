@@ -1,5 +1,5 @@
 baseURL = "https://madsys.seas.harvard.edu/"
-title = "Harvard Systems Research Blog"
+title = "Harvard Systems Blog"
 author = "Harvard John A. Paulson School of Engineering and Applied Sciences"
 copyright = "© 2026"
 theme = "paper"
