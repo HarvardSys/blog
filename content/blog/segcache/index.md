@@ -3,6 +3,7 @@ title = 'Pelikan Segcache: a memory-efficient and scalable in-memory key-value c
 date = 2021-10-01T20:00:00-04:00
 draft = false
 tags = ['caching', 'systems', 'performance', 'memory-management']
+showToc = true
 +++
 
 In collaboration with Carnegie Mellon University, Twitter is building Pelikan's next generation of storage backend, which enables high memory efficiency, high throughput, and scalability for workloads that are primarily small objects and widely use TTL (time-to-live).

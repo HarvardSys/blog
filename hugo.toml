@@ -17,7 +17,7 @@ ignoreErrors = ["error-remote-getjson"]
 [params]
   twitter = 'HarvardSystems'
   github = 'HarvardSys'
-  mainSections = ['posts']
+  mainSections = ['blog']
   math = true
 
 # avatar = 'nanxiaobei@gmail.com'
