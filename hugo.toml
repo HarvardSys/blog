@@ -15,6 +15,7 @@ ignoreErrors = ["error-remote-getjson"]
 # ------------------------------
 
 [params]
+  color = 'light'
   twitter = 'HarvardSystems'
   github = 'HarvardSys'
   mainSections = ['blog']
