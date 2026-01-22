@@ -102,7 +102,7 @@ Such property allows Segcache to use a background thread to scan the TTL buckets
 
 Managing objects is hard, and it limits the throughput and scalability of existing in-memory caching systems. The figure below shows the comparisons of a system that manages objects and a system that manages segments (groups of objects). 
 
-A system that manages objects often needs to maintain several queues, such as object LRU queue, free chunk queue. Most operations require touching at least one queue. For example, a get request moves an object to the LRU queue head [^5], and a delete request requires moving the freed object space to the free chunk queue. In contrast, Segcahce does not maintain object queues. It maintains segment queues, which requires much fewer bookkeeping operations. The necessary bookkeeping operations are performed sequentially in batch, which significantly improves the throughput. 
+A system that manages objects often needs to maintain several queues, such as object LRU queue, free chunk queue. Most operations require touching at least one queue. For example, a get request moves an object to the LRU queue head,[^5] and a delete request requires moving the freed object space to the free chunk queue. In contrast, Segcahce does not maintain object queues. It maintains segment queues, which requires much fewer bookkeeping operations. The necessary bookkeeping operations are performed sequentially in batch, which significantly improves the throughput. 
 
 [^5]: Modern caching systems avoid popping up a popular object each time it gets a request, but still, the chain operation is $O(N_{\text{request}})$.  
 
