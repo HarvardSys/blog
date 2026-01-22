@@ -13,6 +13,9 @@ ignoreErrors = ["error-remote-getjson"]
 [pagination]
   pagerSize = 10
 
+[permalinks]
+  blog = "/:slug/"
+
 # ------------------------------
 
 [params]
