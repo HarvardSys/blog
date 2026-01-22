@@ -1,4 +1,5 @@
-baseURL = "https://madsys.seas.harvard.edu/"
+# baseURL = "https://madsys.seas.harvard.edu/"
+baseURL = "https://harvardsys.github.io/"
 title = "Harvard Systems Blog"
 author = "Harvard John A. Paulson School of Engineering and Applied Sciences"
 copyright = "© 2026"
