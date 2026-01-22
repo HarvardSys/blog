@@ -2,6 +2,7 @@
 baseURL = "https://harvardsys.github.io/"
 title = "Harvard Systems Blog"
 author = "Harvard John A. Paulson School of Engineering and Applied Sciences"
+description = "This is the blog for systems research at Harvard John A. Paulson School of Engineering and Applied Sciences. We explore systems, networking, databases, and computer architecture that power modern computing."
 copyright = "© 2026"
 theme = "paper"
 languageCode = "en"
