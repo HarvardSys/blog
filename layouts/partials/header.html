@@ -81,7 +81,7 @@
       >
         {{- range . -}}
         <a
-          class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal"
+          class="block text-center text-xl leading-[5rem] lg:text-base lg:font-normal nav-item"
           href="{{- .URL -}}"
           >{{- .Name -}}</a
         >
@@ -91,7 +91,7 @@
 
       {{- with $.Scratch.Get "social_list" -}}
       <nav
-        class="mt-12 flex justify-center space-x-6 lg:mt-0 lg:items-center ltr:lg:ml-10 rtl:space-x-reverse rtl:lg:mr-10 dark:invert"
+        class="mt-12 flex justify-center space-x-6 lg:mt-0 lg:items-center rtl:space-x-reverse rtl:lg:mr-10 dark:invert"
       >
         {{- range . -}}<!---->
         <a

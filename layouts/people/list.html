@@ -1,0 +1,50 @@
+{{- define "main" -}}
+
+  <h1 class="mb-14">{{ .Title }}</h1>
+
+{{- $people := .Site.Data.people -}}
+{{- $section_order := slice "Directors" "Faculty" "Postdocs" "PhD Students" -}}
+
+{{- range $section_order -}}
+  {{- $section_name := . -}}
+  {{/* Filter people directly from the data file by their role */}}
+  {{- $people_in_section := where $people "role" $section_name -}}
+
+  {{- if $people_in_section -}}
+    <h2 class="mt-12 mb-8 text-3xl font-bold">{{ $section_name }}</h2>
+    <div class="people-grid gap-8">
+      {{- range $people_in_section -}}
+        <div class="p-6">
+          {{- if .image -}}
+            <img src="{{ .image }}" alt="{{ .name }}" class="w-32 h-32 mx-auto mb-4 people-image">
+          {{- else -}}
+            <div class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center people-image" style="background-color: #A51C30;">
+              <span class="material-icons-outlined" style="font-size: 64px; color: white;">person</span>
+            </div>
+          {{- end -}}
+          <h3 class="!my-0 pb-1 font-bold !leading-none text-center people-text people-name">
+            {{ .name }}
+          </h3>
+          {{ if .title }}
+            <p class="text-center text-sm prose people-text">{{ .title }}</p>
+          {{ end }}
+          {{ if or .email .website }}
+            <p class="text-center text-sm prose people-text">
+              {{ if .email }}
+                <a href="mailto:{{ .email }}"><span class="material-icons-outlined prose">email</span></a>
+              {{ end }}
+              {{ if and .email .website }}
+                &nbsp;
+              {{ end }}
+              {{ if .website }}
+                <a href="{{ .website }}" target="_blank" rel="noopener"><span class="material-icons-outlined prose">link</span></a>
+              {{ end }}
+            </p>
+          {{ end }}
+        </div>
+      {{- end -}}
+    </div>
+  {{- end -}}
+{{- end -}}
+
+{{- end -}}
