@@ -8,4 +8,4 @@ This is the blog for systems research at Harvard John A. Paulson School of Engin
 
 We're building a community of systems researchers and practitioners who are passionate about understanding and improving the infrastructure that powers modern computing.
 
-Follow us on X at [@HarvardSystems](https://x.com/HarvardSystems) for updates or reach out to contribute your own insights.
+<!-- Follow us on X at [@HarvardSystems](https://x.com/HarvardSystems) for updates or reach out to contribute your own insights. -->
