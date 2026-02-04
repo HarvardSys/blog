@@ -1,8 +1,8 @@
 # baseURL = "https://madsys.seas.harvard.edu/"
 baseURL = "https://harvardsys.github.io/"
-title = "Harvard Systems Blog"
+title = "Harvard Systems Group"
 author = "Harvard John A. Paulson School of Engineering and Applied Sciences"
-description = "This is the blog for systems research at Harvard John A. Paulson School of Engineering and Applied Sciences. We explore systems, networking, databases, and computer architecture that power modern computing."
+description = "This is the site of the Harvard Systems Group at Harvard John A. Paulson School of Engineering and Applied Sciences. We explore systems, networking, databases, and computer architecture that power modern computing."
 copyright = "© 2026"
 theme = "paper"
 languageCode = "en"
@@ -13,9 +13,6 @@ enableInlineShortcodes = true
 ignoreErrors = ["error-remote-getjson"]
 [pagination]
   pagerSize = 10
-
-[permalinks]
-  blog = "/:slug/"
 
 # ------------------------------
 
