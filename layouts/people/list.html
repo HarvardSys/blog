@@ -26,7 +26,7 @@
             {{- if .image -}}
               <img src="{{ .image }}" alt="{{ .name }}" class="w-32 h-32 mx-auto mb-4 people-image">
             {{- else -}}
-              <div class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center people-image" style="background-color: #A51C30;">
+              <div class="w-32 h-32 rounded-full mx-auto mb-4 flex items-center justify-center people-image people-placeholder" style="background-color: #A51C30;">
                 <span class="material-icons-outlined" style="font-size: 64px; color: white;">person</span>
               </div>
             {{- end -}}
