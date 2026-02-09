@@ -31,9 +31,12 @@
               </div>
             {{- end -}}
             <h3 class="!my-0 pb-1 font-bold !leading-none text-center people-text people-name">
-              {{ .name }}
-            </h3>
-            {{ if .title }}
+              {{- if .website -}}
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="font-bold people-text people-name no-underline hover:underline">{{ .name }}</a>
+              {{- else -}}
+                {{ .name }}
+              {{- end -}}
+            </h3>            {{ if .title }}
               <p class="text-center text-sm prose people-text">{{ .title }}</p>
             {{ end }}
             {{ if or .email .website }}
