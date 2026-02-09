@@ -56,9 +56,8 @@ Follow the following guide:
    ```
 
    After running the command, the hugo server will be started, All saved modifications will be monitored and reflected immediately and automatically. You can view the post at `http://localhost:1313/posts/[post-name]/`.
-
-   > [!NOTE]
-   > If you don't want to view draft posts, you can simply run `hugo server` without the `--buildDrafts` flag.
+   
+   > Note: If you don't want to view draft posts, you can simply run `hugo server` without the `--buildDrafts` flag.
 4. Start writing your content in markdown format below the front matter.
 
    For figures, it is recommended to place them in the same directory as the markdown file. Svg (for diagrams) and webp (for photos) are preferred formats. You can reference the figures in markdown as follows:
