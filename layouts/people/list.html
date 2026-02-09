@@ -36,11 +36,29 @@
               {{- else -}}
                 {{ .name }}
               {{- end -}}
-            </h3>            {{ if .title }}
+            </h3>
+            {{ if .title }}
               <p class="text-center text-sm prose people-text">{{ .title }}</p>
             {{ end }}
-            {{ if or .email .website }}
+            {{ if .advisor }}
               <p class="text-center text-sm prose people-text">
+                {{ if gt (len .advisor) 1 }}Advisors{{ else }}Advisor{{ end }}:
+                {{ $num_advisors := len .advisor }}
+                {{ $advisor_list := "" }}
+                {{ range $i, $advisor := .advisor }}
+                  {{- if eq $i 0 -}}
+                    {{- $advisor_list = $advisor -}}
+                  {{- else if eq (add $i 1) $num_advisors -}}
+                    {{- $advisor_list = printf "%s, %s" $advisor_list $advisor -}}
+                  {{- else -}}
+                    {{- $advisor_list = printf "%s, %s" $advisor_list $advisor -}}
+                  {{- end -}}
+                {{ end }}
+                {{ $advisor_list }}
+              </p>
+            {{ end }}
+            {{ if or .email .website }}
+              <p class="text-center text-sm prose people-text people-links">
                 {{ if .email }}
                   <a href="mailto:{{ .email }}"><span class="material-icons-outlined prose">email</span></a>
                 {{ end }}
