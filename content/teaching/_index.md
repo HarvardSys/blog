@@ -34,6 +34,10 @@ showTitle = true
 ## Eddie Kohler
 
 - COMPSCI 61: Systems Programming and Machine Organization
+- COMPSCI 1610: Operating Systems
+- COMPSCI 2070: Systems Development for Computational Science
+- COMPSCI 2600R: Projects and Close Readings in Software Systems
+- COMPSCI 2610: Research Topics in Operating Systems 
 - COMPSCI 2620: Distributed Computing
 
 ## H. T. Kung
@@ -54,3 +58,4 @@ showTitle = true
 ## Jim Waldo
 
 - COMPSCI 1050: Privacy and Technology
+- COMPSCI 2620: Distributed Computing
