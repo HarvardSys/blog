@@ -2,7 +2,6 @@
 baseURL = "https://harvardsys.github.io/"
 title = "Harvard Systems Group"
 author = "Harvard John A. Paulson School of Engineering and Applied Sciences"
-description = "This is the site of the Harvard Systems Group at Harvard John A. Paulson School of Engineering and Applied Sciences. We explore systems, networking, databases, and computer architecture that power modern computing."
 copyright = "© 2026"
 theme = "paper"
 languageCode = "en"
@@ -17,6 +16,7 @@ ignoreErrors = ["error-remote-getjson"]
 # ------------------------------
 
 [params]
+  description = "This is the site of the Harvard Systems Group at Harvard John A. Paulson School of Engineering and Applied Sciences. We explore systems, networking, databases, and computer architecture that power modern computing."
   color = 'light'
   # twitter = 'HarvardSystems'
   github = 'HarvardSys'
