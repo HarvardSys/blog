@@ -1,7 +1,7 @@
 +++
 title = 'About'
 date = 2025-12-20T08:00:00-05:00
-draft = false
+draft = true
 +++
 
 This is the blog for systems research at Harvard John A. Paulson School of Engineering and Applied Sciences. We explore systems, networking, databases, and computer architecture that power modern computing.

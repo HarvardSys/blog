@@ -39,20 +39,20 @@ ignoreErrors = ["error-remote-getjson"]
 [menu]
 
   [[menu.main]]
-    identifier = "about"
-    name = "About"
-    url = "/about/"
-    weight = 10
-  [[menu.main]]
     identifier = "people"
     name = "People"
     url = "/people/"
-    weight = 20
-#   [[menu.main]]
-#     identifier = "contact"
-#     name = "Contact"
-#     url = "/contact/"
-#     weight = 10
+    weight = 10
+  [[menu.main]]
+    identifier = "teaching"
+    name = "Teaching"
+    url = "/teaching/"
+    weight = 40
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog/"
+    weight = 50
 
 [taxonomies]
 category = "categories"
