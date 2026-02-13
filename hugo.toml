@@ -45,6 +45,11 @@ ignoreErrors = ["error-remote-getjson"]
     url = "/people/"
     weight = 10
   [[menu.main]]
+    identifier = "seminar"
+    name = "Seminar"
+    url = "/seminar/"
+    weight = 30
+  [[menu.main]]
     identifier = "teaching"
     name = "Teaching"
     url = "/teaching/"

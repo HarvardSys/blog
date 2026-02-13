@@ -4,17 +4,8 @@
   <h2>Recent Posts</h2>
   {{ range first 5 (where site.RegularPages "Section" "blog") }}
     <h3 class="mb-0"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-     <div class="text-sm antialiased opacity-60">
-      {{- if .Date -}}
-      <time>{{- .Date | time.Format ":date_medium" -}}</time>
-      {{- end -}}<!---->
-      {{- $single_author := or .Params.Author site.Author.name -}}
-      <!---->
-      {{- if $single_author -}}
-      <span class="mx-1">&middot;</span><span>{{- $single_author -}}</span>
-      {{- end -}}
-    </div>
+    {{ partial "date-people.html" . }}
     <div class="not-prose">{{ .Summary }}</div>
-    <p class="mt-1.5"><a class="link block" href="{{ .Permalink }}">Read full post →</a></p>
+    <p class="mt-1.5"><a class="link block" href="{{ .Permalink }}">Read more →</a></p>
   {{ end }}
 {{ end }}
