@@ -2,7 +2,7 @@
 baseURL = "https://harvardsys.github.io/"
 title = "Harvard Systems Group"
 author = "Harvard John A. Paulson School of Engineering and Applied Sciences"
-copyright = "© 2026"
+copyright = "Copyright © 2026 The President and Fellows of Harvard College"
 theme = "paper"
 languageCode = "en"
 DefaultContentLanguage = "en"
