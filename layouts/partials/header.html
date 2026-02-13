@@ -3,10 +3,14 @@
     class="mx-auto flex h-[4.5rem] max-w-(--w) px-8 whitespace-nowrap lg:justify-center"
   >
     <div class="relative z-50 flex items-center ltr:mr-auto rtl:ml-auto">
+      <a href="{{- `` | absURL -}}">
+        <img src="/images/seas-shield.png" alt="SEAS Shield" class="header-shield">
+      </a>
       <a
         class="-translate-y-[1px] text-2xl font-medium"
         href="{{- `` | absURL -}}"
-        >{{ site.Title }}</a
+        >
+        {{ site.Title }}</a
       >
     </div>
 
