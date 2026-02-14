@@ -2,7 +2,7 @@
 title = 'Pelikan Segcache: a memory-efficient and scalable in-memory key-value cache for small objects'
 date = 2021-10-01T20:00:00-04:00
 author = 'Juncheng Yang'
-draft = false
+draft = true
 tags = ['caching', 'systems', 'performance', 'memory-management']
 showToc = true
 +++
