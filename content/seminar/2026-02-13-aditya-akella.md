@@ -4,7 +4,7 @@ date = 2026-02-12T10:00:00-05:00
 eventTime = 2026-02-13T14:00:00-05:00
 speaker = 'Aditya Akella (the University of Texas at Austin)'
 location = "SEC 2.122 & 2.123"
-summary = "Modern applications run on increasingly heterogeneous and dynamic platforms, yet today's operating systems (OSes) still rely on rigid, locally optimized policies that are manually designed, weakly coordinated, and slow to adapt. As a result, even when resources are plentiful, performance and tail latency are often dominated by poor policy choices rather than fundamental hardware limits. To address this, Aditya Akella will describe LDOS, a Learning-Directed Operating System that treats policy design as a data-driven, system-wide optimization problem."
+summary = "Modern applications often face performance bottlenecks due to rigid OS policies, even when resources are plentiful. Aditya Akella will present LDOS (Learning-Directed Operating System), which replaces manual policy design with data-driven, system-wide optimization."
 draft = false
 +++
 
