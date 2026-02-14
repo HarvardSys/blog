@@ -1,7 +1,7 @@
 {{ define "main" }}
   {{ .Content }}
   <hr>
-  <h2>Recent Seminars</h2>
+  <h2>Upcoming and Recent Seminars</h2>
   {{ range first 3 (where site.RegularPages "Section" "seminar") }}
     <h3 class="mb-0"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
     {{ partial "date-people.html" . }}
