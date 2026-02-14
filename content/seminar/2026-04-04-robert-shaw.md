@@ -1,5 +1,5 @@
 +++
-title = 'Open Source Software (OSS) inference stack'
+title = 'Open Source Software (OSS) Inference Stack'
 date = 2026-02-13T22:00:00-05:00
 eventTime = 2026-03-04T12:45:00-05:00
 speaker = 'Robert Shaw (Red Hat)'
