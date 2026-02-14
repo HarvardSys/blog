@@ -56,7 +56,7 @@ ignoreErrors = ["error-remote-getjson"]
     weight = 40
   [[menu.main]]
     identifier = "blog"
-    name = "Blogs"
+    name = "Blog"
     url = "/blog/"
     weight = 50
 
