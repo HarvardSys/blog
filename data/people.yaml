@@ -1,12 +1,14 @@
 - name: "Juncheng Yang"
   title: "Assistant Professor"
   role: "Faculty"
+  weight: 1
   image: "/images/people/juncheng-yang.jpg"
   email: "juncheng@g.harvard.edu"
   website: "https://juncheng.seas.harvard.edu/"
 - name: "Minlan Yu"
   title: "Gordon McKay Professor of Computer Science"
   role: "Faculty"
+  weight: 2
   image: "/images/people/minlan-yu.jpg"
   email: "minlanyu@g.harvard.edu"
   website: "https://minlanyu.seas.harvard.edu/"

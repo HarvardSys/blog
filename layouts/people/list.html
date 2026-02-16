@@ -14,9 +14,9 @@
     {{- range $people_in_section -}}
       {{- $name_parts := split .name " " -}}
       {{- $last_name := index $name_parts (sub (len $name_parts) 1) -}}
-      {{- $sortable_people = $sortable_people | append (dict "surname" $last_name "person" .) -}}
+      {{- $sortable_people = $sortable_people | append (dict "surname" $last_name "person" . "weight" (default 99 .weight)) -}}
     {{- end -}}
-    {{- $sorted_people := sort $sortable_people "surname" -}}
+    {{- $sorted_people := sort $sortable_people "weight" "surname" -}}
 
     <h2 class="mt-12 mb-8 text-3xl font-bold">{{ $section_name }}</h2>
     <div class="people-grid gap-8">
