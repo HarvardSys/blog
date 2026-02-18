@@ -18,7 +18,7 @@
     {{- end -}}
     {{- $sorted_people := sort $sortable_people "weight" "surname" -}}
 
-    <h2 class="mt-12 mb-8 text-3xl font-bold">{{ $section_name }}</h2>
+    <h2 class="mt-12 mb-8 text-3xl">{{ $section_name }}</h2>
     <div class="people-grid gap-8">
       {{- range $sorted_people -}}
         {{- with .person -}}
@@ -30,9 +30,9 @@
                 <span class="material-icons-outlined" style="font-size: 64px; color: white;">person</span>
               </div>
             {{- end -}}
-            <h3 class="!my-0 pb-1 font-bold !leading-none text-center people-text people-name">
+            <h3 class="!my-0 pb-1 !leading-none text-center people-text people-name">
               {{- if .website -}}
-                <a href="{{ .website }}" target="_blank" rel="noopener" class="font-bold people-text people-name no-underline hover:underline">{{ .name }}</a>
+                <a href="{{ .website }}" target="_blank" rel="noopener" class="people-text people-name no-underline hover:underline">{{ .name }}</a>
               {{- else -}}
                 {{ .name }}
               {{- end -}}
