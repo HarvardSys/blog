@@ -1,4 +1,8 @@
-# Harvard Systems Blog
+# Harvard Systems Group
+
+This is the website for the [Harvard Systems Group][harvard-systems]. The Harvard Systems Group at the John A. Paulson School of Engineering and Applied Sciences (SEAS) operates at the vital intersection of systems, theory, and hardware. We design and build the architectures, networks, and databases that form the backbone of modern computing.
+
+[harvard-systems]: https://systems.seas.harvard.edu/
 
 ## Installation
 
