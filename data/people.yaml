@@ -305,3 +305,29 @@
   website: "https://hychyc1.github.io/"
   advisor:
     - "Michael Mitzenmacher"
+- name: "Golden Chang"
+  title: "PhD Student"
+  role: "PhD Students"
+  image: "/images/people/golden-chang.jpg"
+  email: "kaodenchang@fas.harvard.edu"
+  advisor:
+    - "H.T. Kung"
+- name: "He-Yen Hsieh"
+  title: "PhD Student"
+  role: "PhD Students"
+  email: "heyenhsieh@g.harvard.edu"
+  advisor:
+    - "H.T. Kung"
+- name: "Matheus Farias"
+  title: "PhD Student"
+  role: "PhD Students"
+  image: "/images/people/matheus-farias.webp"
+  email: "matheusfarias@g.harvard.edu"
+  advisor:
+    - "H.T. Kung"
+- name: "Mark Ting"
+  title: "PhD Student"
+  role: "PhD Students"
+  email: "weiteting@g.harvard.edu"
+  advisor:
+    - "H.T. Kung"
