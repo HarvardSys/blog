@@ -1,7 +1,7 @@
 +++
 title = 'The Collapse of Constrained Physical AI'
-date = 2026-03-09T17:00:00-04:00
-eventTime = 2026-03-11T12:45:00-04:00
+date = 2026-03-10T17:00:00-04:00
+eventTime = 2026-03-18T12:45:00-04:00
 speaker = 'Jason Jabbour (Harvard University)'
 location = "SEC 2.122 & 2.123"
 summary = "As AI transitions from digital screens to autonomous physical systems like flight and construction, moving large-scale intelligence from the cloud to the edge presents significant technical and safety hurdles. Jason Jabbour will show these deployment constraints and share recent collaborative research that restores safety and task success within compressed Vision-Language-Action (VLA) models."
